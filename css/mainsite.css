@@ -1,0 +1,43 @@
+a{
+ text-decoration: none;
+}
+
+#header{
+	background-color: #c0d4ee;
+	margin-left: 0;
+	padding-left: 50px;
+	background-color: #27ae60;
+	color:white;
+}
+
+#content{
+	width: 1000px;
+	height: auto;
+	background-color: #c0d4ee;
+	position: relative;
+	margin: auto;
+	padding : 50px;
+	top: 150px;
+	
+}
+#serien{
+	margin-top: 50px;
+}
+.seriencontainer{
+	margin: 5px;
+	padding: 5px;
+	height: 150px;
+	background-color: #b0c4de;
+}
+.seriencontainer img{
+	height: 150px;
+	float: left;
+	margin-right: 5px;
+}
+.seriencontainer h2{
+	display: inline;
+	
+}
+
+
+
