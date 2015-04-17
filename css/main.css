@@ -1,5 +1,5 @@
 body {
-    background-color: #d0e4fe;
+    background-color: #282828;
 	margin: 0;
 	
 }
@@ -8,7 +8,46 @@ input{
 	padding: 13px 13px 13px 44px;
 	border: 0;
 }
+h1{
+	color: #961428;
+}
+#header{
+	background-color: #3c3c3c;
+	margin-left: 0;
+	padding-left: 50px;
+	
+}
 
+#content{
+	width: 1000px;
+	height: auto;
+	position: relative;
+	margin: auto;
+	padding : 50px;
+	top: 50px;
+	color:white;
+}
+
+#centerBox{
+	width: 450px;
+	height: auto;
+	background-color: #3c3c3c;
+	position: relative;
+	margin: auto;
+	line-height : 2em;
+	padding : 50px;
+	top: 150px;
+	font-size: 2em;
+	color:white;
+}
+
+#centerBox input{
+	float:right;
+	background-size: 30px 30px;
+	background-position: 10px 11px;
+	background-repeat: no-repeat;
+	margin-top:5px;
+}
 
 .flat-button {
   position: relative;
@@ -24,13 +63,18 @@ input{
   border: 0;
   border-bottom: 2px solid #219d55;
   cursor: pointer;
-  -moz-box-shadow: 10px 10px 5px #888;
-  -webkit-box-shadow: 10px 10px 5px #888;
-  box-shadow: 10px 10px 5px #888;
+  -moz-box-shadow: 10px 10px 5px #282828;
+  -webkit-box-shadow: 10px 10px 5px #282828;
+  box-shadow: 10px 10px 5px #282828;
 }
 .flat-button:active {
   top: 1px;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+input[type=number] {
+
+	width: 50px;;
 }
