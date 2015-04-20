@@ -6,24 +6,21 @@ a {
     margin-top: 50px;
 }
 
-.seriencontainer {
-    padding: 5px;
-    height: 150px;
+.box {
     background-color: #3c3c3c;
-    color: white;
+    padding: 5px;
 }
 
-.seriencontainer:hover {
+.box:hover {
     background-color: #2c2c2c;
 }
 
-.seriencontainer img {
+.box img {
     height: 150px;
     float: left;
-    margin-right: 5px;
 }
 
-.seriencontainer h2 {
+.box h2 {
     display: inline;
 
 }
