@@ -11,6 +11,7 @@ input{
 h1{
 	color: #961428;
 }
+
 #header{
 	background-color: #3c3c3c;
 	margin-left: 0;
@@ -30,7 +31,7 @@ h1{
 
 #centerBox{
 	width: 450px;
-	height: auto;
+	height: 250px;
 	background-color: #3c3c3c;
 	position: relative;
 	margin: auto;
@@ -75,6 +76,5 @@ h1{
 }
 
 input[type=number] {
-
 	width: 50px;;
 }
