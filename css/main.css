@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Raleway-SemiBold, Helvetica, Arial, sans-serif;
     color: #c85532;
     font-size: 4.0rem;
-    line-height: 1.2;
+    line-height: 1.2rem;
     letter-spacing: -.1rem;
 }
 
@@ -232,7 +232,7 @@ input {
     background-color: #c85532;
 }
 
-#header {
+header {
     background-color: #3c3c3c;
     margin-left: 0;
 

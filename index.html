@@ -8,17 +8,30 @@
 </head>
 
 <body>
-<div id="header">
-    <h1>Der Serien Manager</h1>
-</div>
-<div id="centerBox">
-
-    <form action="mainsite.html">
-
-        Email: <input autofocus required type="email" id="email" placeholder="max.mustermann@gmail.com"><br>
-        Passwort: <input required type="password" id="passwort" placeholder="passwort"> <br>
-        <br>
-        <input class="flat-button ease" type="submit" value="Anmelden">
+<header>
+	<div class="container">
+		<h1>Der Serien Manager</h1>
+	</div>
+</header>
+<div class="container" id="content">
+	<form action="mainsite.html">
+		<div class="row box">
+			<div class="four column">Email:</div>
+			<div class="eight column"><input autofocus required type="email" id="email" placeholder="max.mustermann@gmail.com"></div>
+		</div>
+		<div class="row">
+			<div class="four column">
+				Passwort: 
+			</div>
+			<div class="eight column">
+				<input required type="password" id="passwort" placeholder="passwort">
+			</div>
+		</div>
+		<div class="row">
+			<div class="row">
+					<input class="flat-button ease" type="submit" value="Anmelden">
+			<div>
+		</br>
     </form>
 </div>
 
