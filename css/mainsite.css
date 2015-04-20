@@ -1,28 +1,31 @@
-a{
- text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-#serien{
-	margin-top: 50px;
+#serien {
+    margin-top: 50px;
 }
-.seriencontainer{
-	margin: 10px;
-	padding: 5px;
-	height: 150px;
-	background-color: #3c3c3c;
-	color:white;
+
+.seriencontainer {
+    padding: 5px;
+    height: 150px;
+    background-color: #3c3c3c;
+    color: white;
 }
-.seriencontainer:hover{
-	background-color: #2c2c2c;
+
+.seriencontainer:hover {
+    background-color: #2c2c2c;
 }
-.seriencontainer img{
-	height: 150px;
-	float: left;
-	margin-right: 5px;
+
+.seriencontainer img {
+    height: 150px;
+    float: left;
+    margin-right: 5px;
 }
-.seriencontainer h2{
-	display: inline;
-	
+
+.seriencontainer h2 {
+    display: inline;
+
 }
 
 

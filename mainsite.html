@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>Der Serien Manager</title>
-	<link rel="stylesheet" href="css/main.css"> 
-	<link rel="stylesheet" href="css/mainsite.css"> 
+    <meta charset="utf-8"/>
+    <title>Der Serien Manager</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainsite.css">
 </head>
 
-	<body>
-	<div id="header">
-		<h1>Der Serien Manager</1>
-	</div>
-	<div id="content">
-		<a href="erstellen.html"><input class="flat-button" type="button" value="Neue Serie"></a>
-		<div id="serien">
-			<div class="seriencontainer">
-				<img src="pictures/dexter.jpg">
-				<h2> Dexter </h2> (2006–2013) <br>
-				A Miami police forensics expert moonlights as a serial killer of criminals whom he believes have escaped justice.
-			</div>
-			<div class="seriencontainer">
-				<img src="pictures/breakingbad.jpg">
-				<h2> Breaking Bad </h2> (2008–2013) <br>
-				A chemistry teacher diagnosed with a terminal lung cancer, teams up with his former student, Jesse Pinkman, to cook and sell crystal meth.
-				<progress value="80" max="100"></progress> **// TODO: ProgressBar Positionieren uns anpassen ***/
-			</div>
-		</div>
-	</div>
-	
-	</body>
+<body>
+<div id="header">
+    <div class="container">
+        <h1 class="column_6">Der Serien Manager</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="twelve column"><p>maÃŸe</p></div>
+    </div>
+    <div class="row">
+        <div class="one column"><p>colun_1</p></div>
+        <div class="two column"><p>colun_2</p></div>
+        <div class="three column"><p>colun_3</p></div>
+    </div>
+    <div class="row">
+        <div class="four column"><p>colun_4</p></div>
+        <div class="five column"><p>colun_5</p></div>
+    </div>
+    <div class="row">
+        <div class="six column"><p>colun_6</p></div>
+    </div>
+</div>
+
+
+<div class="container" id="content">
+    <div class="row">
+        <a class="twelve column button" href="erstellen.html"><input type="button" value="Neue Serie"></a>
+    </div>
+
+    <div class="row">
+        <img class="two column" src="pictures/dexter.jpg">
+
+        <div class="ten column">
+            <h2>Dexter
+                <small> (2006 â€“ 2013)</small>
+            </h2>
+            <p>A Miami police forensics expert moonlights as a serial killer of criminals whom he believes have escaped
+                justice.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <img class="two column" src="pictures/breakingbad.jpg">
+
+        <div class="ten column">
+            <h2>Breaking Bad
+                <small>(2008 â€“ 2013)</small>
+            </h2>
+            <p>A chemistry teacher diagnosed with a terminal lung cancer, teams up with his former student, Jesse
+                Pinkman,
+                to cook and sell crystal meth.</p>
+            <progress value="80" max="100"></progress>
+        </div>
+
+    </div>
+</div>
+
+</body>
 
 </html>
