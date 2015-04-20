@@ -7,19 +7,56 @@
     <link rel="stylesheet" href="css/erstellen.css">
 </head>
 <body>
-<div id="header">
-    <h1>Der Serien Manager</h1>
-</div>
-<div id="centerBox">
-    <form action="mainsite.html">
-        Name <input type="Text" required autofocus> <br>
-        Bild <input type="file"> <br>
-        Staffeln <input type="number" required><br>
-        Folgen pro Staffel <input type="number" required>
-        <input class="flat-button ease" type="submit" value="Serie erstellen">
-    </form>
-
-</div>
+<header>
+	<div class="container">
+		<div class="row">
+			<h1>Der Serien Manager</h1>
+		</div>
+	</div>
+</header>
+<form action="mainsite.html">
+	<div class="container ">
+		<div class="box">
+			<div class="row">
+				<div class="four column">
+					<p>Name</p> 
+				</div>
+				<div class="eight column">
+					<input type="Text" required autofocus> 
+				</div>
+			</div>
+			<div class="row">
+				<div class="four column">
+					<p>Bild </p>
+				</div>
+				<div class="eight column">
+					<input type="file">
+				</div>
+			</div>
+			<div class="row">
+				<div class="four column">
+					<p>Staffeln </p>
+				</div>
+				<div class="eight column">
+					<input type="number" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="four column">
+					<p>Folgen pro Staffel</p> 
+				</div>
+				<div class="eight column">
+					<input type="number" required>
+				</div>
+			</div>
+			<div class="row">
+				<a class="four column button">
+					Serie erstellen
+				</a>
+			</div>
+		</div>
+	</div>
+</form>
 
 </body>
 

@@ -233,13 +233,15 @@ input {
 }
 
 header {
-    background-color: #3c3c3c;
     margin-left: 0;
 
 }
 
-#content {
-    top: 50px;
+.box {
+    background-color: #3c3c3c;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .flat-button:active {
