@@ -8,7 +8,9 @@ a {
 
 .box {
     background-color: #3c3c3c;
-    padding: 5px;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .box:hover {
