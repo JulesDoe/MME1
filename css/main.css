@@ -17,11 +17,6 @@
 }
 
 @font-face {
-    font-family: 'Raleway-Regular';
-    src: local('Raleway-Regular'), url('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Raleway-SemiBold';
     src: local('Raleway-SemiBold'), url('/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
 }
@@ -232,6 +227,16 @@ input {
     border: 0;
 }
 
+input[type=number],
+input[type=text],
+input[type=password] {
+	background-color: #2c2c2c;
+	border:1px solid #4c4c4c;
+}
+input[type=number]{
+	width: 5rem;
+}
+
 .button {
     background-color: #c85532;
 }
@@ -248,20 +253,14 @@ header {
     margin-bottom: 2%;
 }
 
-.flat-button:active {
-    top: 1px;
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-input[type=number] {
-
-    width: 50px;;
-}
-
 progress {
     width: 100%;
+	color: #c85532;
+	appearance: none;
+	-moz-appearence: none;
+	border: none;
+	background-color:#2c2c2c;
+
 }
 
 /* Clearing
