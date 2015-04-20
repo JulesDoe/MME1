@@ -256,6 +256,10 @@ input[type=number] {
     width: 50px;;
 }
 
+progress {
+    width: 100%;
+}
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
