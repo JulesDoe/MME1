@@ -1,4 +1,8 @@
-#centerBox {
-    background-color: #3c3c3c;
-    height: 550px;
+.imdb{
+	padding-left: 1rem;
+	height: 2rem;
+}
+input[type=submit]
+{
+	width:100%;
 }

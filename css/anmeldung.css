@@ -1,13 +1,28 @@
 
 #email {
     background-image: url(symbols/email.svg);
+	padding-left: 3rem;
+	
+	background-position: 2px;
+	background-repeat: no-repeat;
+	background-size: 2rem;
+}
+lable{
+	display: inline;
+	
 }
 
 #passwort {
     background-image: url(symbols/lock.svg);
-}
-
-input{
+	padding-left: 3rem;
 	
+	background-position: 2px;
+	background-repeat: no-repeat;
+	background-size: 2rem;
+}		
+
+input[type=submit]{
+	width:100%;
+	cursor: pointer; 
 }
 
