@@ -8,62 +8,65 @@
 </head>
 <body>
 <header>
-	<div class="container">
-		<div class="row">
-			<a href="mainsite.html"><h1>Der Serien Manager</h1></a>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <a href="mainsite.html"><h1>Der Serien Manager</h1></a>
+        </div>
+    </div>
 </header>
 <form action="mainsite.html">
-	<div class="container ">
-		<div class="box">
-			<div class="row">
-				<div class="four column">
-					<p><label for="link">Link zu </label> <a href="http://www.imdb.com/" target="_blank"><img alt="imbd" class="imdb" src="pictures/imdb.jpg"> </a></p> 
-				</div>
-				<div class="eight column">
-					<input type="text" id="link"> 
-				</div>
-			</div>
-			<div class="row">
-				<div class="four column">
-					<p><label for="name">Name</label></p> 
-				</div>
-				<div class="eight column">
-					<input type="text" id="name" required autofocus> 
-				</div>
-			</div>
-			<div class="row">
-				<div class="four column">
-					<p><label for="bild">Bild </label></p>
-				</div>
-				<div class="eight column">
-					<input type="file" id="bild">
-				</div>
-			</div>
-			<div class="row">
-				<div class="four column">
-					<p><label for="staffel">Staffeln</label> </p>
-				</div>
-				<div class="eight column">
-					<input type="number" id="staffel" required>
-				</div>
-			</div>
-			<div class="row">
-				<div class="four column">
-					<p><label for="folge">Folgen pro Staffel</label></p> 
-				</div>
-				<div class="eight column">
-					<input type="number" id="folge" required>
-				</div>
-			</div>
-			<div class="row">
-				<div class="four column button" >
-					<input type="submit" value="Serie erstellen">
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container ">
+        <div class="box">
+            <div class="row">
+                <div class="four column">
+                    <p><label for="link">Link zu </label> <a href="http://www.imdb.com/" target="_blank"><img alt="imbd"
+                                                                                                              class="imdb"
+                                                                                                              src="pictures/imdb.jpg">
+                    </a></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="link">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="name">Name</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="name" required autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="bild">Bild </label></p>
+                </div>
+                <div class="eight column">
+                    <input type="file" id="bild">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="staffel">Staffeln</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="number" id="staffel" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="folge">Folgen pro Staffel</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="number" id="folge" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-by-four three column button">
+                    <input type="submit" value="Serie erstellen">
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
 
 </body>

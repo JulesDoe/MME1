@@ -202,14 +202,17 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Raleway-SemiBold, Helvetica, Arial, sans-serif;
     color: #c85532;
     font-size: 4.0rem;
-    line-height: 1.2rem;
-    letter-spacing: -.1rem;
+    line-height: 8rem;
+    letter-spacing: .1rem;
 }
 
 h2 {
     font-family: Raleway-SemiBold, Helvetica, Arial, sans-serif;
     font-size: 2.0rem;
+    line-height: 2.4rem;
+    letter-spacing: .1rem;
     color: #fff;
+    margin-top: 0;
 }
 
 p {
@@ -229,13 +232,14 @@ input {
 
 input[type=number],
 input[type=text],
-input[type=password] ,
-input[type=email]{
-	background-color: #2c2c2c;
-	border:1px solid #4c4c4c;
+input[type=password],
+input[type=email] {
+    background-color: #2c2c2c;
+    border: 1px solid #4c4c4c;
 }
-input[type=number]{
-	width: 5rem;
+
+input[type=number] {
+    width: 5rem;
 }
 
 .button {
@@ -256,11 +260,11 @@ header {
 
 progress {
     width: 100%;
-	color: #c85532;
-	appearance: none;
-	-moz-appearence: none;
-	border: none;
-	background-color:#2c2c2c;
+    color: #c85532;
+    appearance: none;
+    -moz-appearence: none;
+    border: none;
+    background-color: #2c2c2c;
 
 }
 
