@@ -248,8 +248,8 @@ input[type=number] {
 
 header {
     margin-left: 0;
-    background-color: #3c3c3c;
 	z-index: 200;
+	background-color: #282828;
 }
 
 .box {

@@ -82,17 +82,17 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .first{
-    z-index:105;
+    z-index: -1; /** Muss minus sein liegt sonst über dem Head **/
 }
 .second{
 	animation-delay: 0.1s;
-	z-index: 100;
+	z-index: -2;
 }
 .third{
 	animation-delay: 0.2s;
-	z-index:95;
+	z-index: -3 ;
 }
 .fourth{
 	animation-delay: 0.3s;
-	z-index:90;
+	z-index: -4;
 }
