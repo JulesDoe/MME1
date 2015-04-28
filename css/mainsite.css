@@ -4,14 +4,20 @@
 }
 
 .box img {
-    width: 20%; 	 	
+    width: 20%;
     float: left;
 }
 
 .box h2 {
     display: inline;
-	
+
 }
 
 
 
+.box > .button {
+    display:none;
+}
+.box:hover > .button {
+    display:block;
+}
