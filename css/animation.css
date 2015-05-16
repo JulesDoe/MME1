@@ -4,6 +4,12 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.fade {
+   opacity: 1;
+   transition:  .25s ease-in-out;
+   -moz-transition:  .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
 
 .animated {
     -webkit-animation-duration: 0.3s;

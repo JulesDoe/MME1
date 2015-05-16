@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/mainsite.css">
     <link rel="stylesheet" href="css/animation.css">
+	<script language="javascript" type="text/javascript" src="js/search.js"></script>
 </head>
 
 <body>
@@ -15,14 +16,14 @@
     </div>
 </header>
 
-<div class="container" id="background">
+<div class="container" id="background" >
     <div class="row">
         <a class="eight column button" href="erstellen.html"><input type="button" value="Neue Serie"></a>
-        <a class="four column button" href="suchen.html"><input type="button" value="Suchen"></a>
+        <input class="four column" onkeyup="suchen();" type="text" name="suche" value="Suchen" id="suche">
     </div>
 
-    <div class="row box animated fadeInDown second">
-        <img class="two column" src="pictures/dexter.jpg" alt="breakingbad">
+    <div class="row box animated fadeInDown second" id="dexter">
+        <img class="two column" src="pictures/dexter.jpg" alt="dexter">
 
         <h2 class="six column">Dexter
             <small> (2006)</small>
@@ -36,7 +37,7 @@
         <progress class="ten column" value="100" max="100"></progress>
     </div>
 
-    <div class="row box animated fadeInDown second">
+    <div class="row box animated fadeInDown second" id="breakingbad">
         <img class="two column" src="pictures/breakingbad.jpg" alt="breakingbad">
 
         <h2 class="six column">Breaking Bad
@@ -51,8 +52,8 @@
         <progress class="ten column" value="80" max="100"></progress>
     </div>
 
-    <div class="row box animated fadeInDown second">
-        <img class="two column" src="pictures/games.jpg" alt="breakingbad">
+    <div class="row box animated fadeInDown second" id="gameofthrones">
+        <img class="two column" src="pictures/games.jpg" alt="games">
 
         <h2 class="six column">Game of Thrones - Das Lied von Eis und Feuer
             <small> (2011)</small>
@@ -65,8 +66,8 @@
     </div>
 
 
-    <div class="row box animated fadeInDown second">
-        <img class="two column" src="pictures/grey.jpg" alt="breakingbad">
+    <div class="row box animated fadeInDown second" id="greyanatomy">
+        <img class="two column" src="pictures/grey.jpg" alt="grey">
 
         <h2 class="six column">Grey's Anatomy - Die jungen Ärzte
             <small> (2005)</small>
