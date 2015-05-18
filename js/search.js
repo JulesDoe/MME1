@@ -12,11 +12,24 @@ function suchen()
 		var div = document.getElementById(ids[i]);
 		if(namen[i].search(suche.value) == -1)//  && suche.value.length >= 3
 		{
-			div.style.display = "none";
+
+			div.classList.add("fade");
+			//	div.style.height = "0";
+
+			/*
+			div.classList.remove("fadeInDown");
+			div.classList.add("zoomOutLeft");
+			div.style.animationIterationCount = div.style.animationIterationCount + 1;
+			*/
 		}
 		else
 		{
-			div.style.display = "block";
+			div.classList.remove("fade");
+			/*
+			div.classList.remove("zoomOutLeft");
+			div.classList.add("fadeIn");
+			div.style.animationIterationCount = div.style.animationIterationCount + 1;
+			*/
 		}
 
 	}
