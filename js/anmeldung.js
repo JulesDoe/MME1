@@ -1,6 +1,5 @@
 window.onload = function () {
     document.getElementById('login').addEventListener("submit", validateForm);
-    //TODO: irgendwie ist das event scheinbar falsch eingehängt. Oder die Browser validierung geht vor .. oder sowas
 };
 
 
@@ -10,7 +9,6 @@ function validateForm(event) {
     if (x == null || x == "" || !validateEmail(x)) {
         emailinput.classList.add("false");
         event.preventDefault();
-
     }
     else {
     }

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Der Serien Manager</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/anmeldung.css">
+    <link rel="stylesheet" href="css/erstellen.css">
+    <script language="javascript" type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <a href="mainsite.html"><h1>Der Serien Manager</h1></a>
+        </div>
+    </div>
+</header>
+<form action="mainsite.html" id="validate">
+    <div class="container ">
+        <div class="box" style="height:auto">
+            <div class="row">
+                <div class="four column">
+                    <p><label for="name">Name </label>
+                    </p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="nachname">Nachname </label>
+                        </p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="nachname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="email">Email </label>
+                    </p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p>Geschlecht</p>
+                </div>
+                <div class="eight column">
+                        <input type="radio" id="frau" name="ges" value="Frau"> <label for="frau">Frau</label>
+                        <input type="radio" id="mann" name="ges" value="Mann"> <label for="mann">Mann</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="alter">Geburtstag </label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="alter">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="plz">PLZ</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="plz" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="ort">Ort</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="ort" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="land">Land</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="land" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four column">
+                    <p><label for="ktnr">Kreditkartennr.(10 Stellig)</label></p>
+                </div>
+                <div class="eight column">
+                    <input type="text" id="ktnr">
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-by-four three column button">
+                    <input type="submit" value="Registrieren">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+
+</html>

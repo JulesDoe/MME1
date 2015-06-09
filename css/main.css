@@ -64,6 +64,7 @@ a {
 
 #background {
     z-index: 0;
+    min-height: 450px;
 }
 
 /* For devices larger than 550px */
@@ -261,6 +262,12 @@ header {
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
+    height: 180px;
+}
+
+#noitems
+{
+    display: none;
 }
 
 progress {
