@@ -1,5 +1,5 @@
 <?php
-
+    include("Serie.php");
     error_reporting(E_ALL);
     $mysql;
 
@@ -15,8 +15,6 @@
         if(!mysqli_real_connect($mysql, $server, $user, $pw, $db))
         {
             die("Fehler");
-        }else{
-            echo "Verbunden<br>";
         }
 
         if (mysqli_connect_errno())
@@ -37,7 +35,7 @@
         {
             echo "Error: ". mysqli_error($mysql);
         }
-        echo "<br>";
+        //echo "<br>";
         return $ergebnis;
     }
 
@@ -92,12 +90,23 @@
 
     if(is_ajax())
     {
+
         if (isset($_POST["action"]) && !empty($_POST["action"])) { //Checks if action value exists
             Connect();
             $action = $_POST["action"];
             switch($action) { //Switch case for value of action
                 case "getSeries":
                     echo json_encode(GetSeries());
+                break;
+                case "checkuser":
+                    $user = $_POST["user"];
+                    $pw = $_POST["pw"];
+                    $erg = CheckUser($user, $pw);
+                    $_SESSION['id'] = $erg["UID"];
+                    echo json_encode($erg);
+                break;
+                case "test":
+                   echo "test";
                 break;
             }
             Close();
