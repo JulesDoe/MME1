@@ -1,4 +1,79 @@
+/*Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: local('Montserrat-Regular'), url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: local('Montserrat-Bold'), url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: local('Raleway-Regular'), url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: local('Raleway-SemiBold'), url(../fonts/Raleway/Raleway-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: local('Raleway-SemiBold'), url(../fonts/Raleway/Raleway-ExtraBold.ttf) format('truetype');
+}
+
+/*Typo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway-SemiBold;
+    color: #c85532;
+    line-height: 8rem;
+    letter-spacing: .1rem;
+}
+
+h1 {
+    font-family: Raleway-ExtraBold;
+}
+
+h2 {
+    line-height: 2.4rem;
+    letter-spacing: .1rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+/*...
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    font-family: Montserrat-Regular, Helvetica, Arial, sans-serif;
+    color: #FFF;
+    background-color: #282828;
+}
 
 .row {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: #363636;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #c85532;
+    border-color: #c85532;
+}
+
+.form-control-lg {
+    padding: 22px 12 PX;
 }
