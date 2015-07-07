@@ -75,5 +75,9 @@ body {
 }
 
 .form-control-lg {
-    padding: 22px 12 PX;
+    padding: 22px 12px;
+}
+
+.form-group {
+    padding-bottom: 15px;
 }
