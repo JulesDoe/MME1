@@ -81,3 +81,23 @@ body {
 .form-group {
     padding-bottom: 15px;
 }
+
+.bar-staffel {
+    display: table;
+    table-layout: fixed;
+    width: 100%
+}
+
+.bar-folge {
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+    height: 1rem;
+    background-color: red;
+    display: table-cell;
+}
+
+.bar-folge-ungesehen {
+    border-left: #fff 1px solid;
+    border-right: #fff 1px solid;
+    background-color: #c85532;
+}
