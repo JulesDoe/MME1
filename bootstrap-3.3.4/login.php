@@ -5,7 +5,7 @@ echo "test<br>";
 
 connect();
 
-print_r ($_POST);
+print_r($_POST);
 
 //InsertUser("TestUser" , "123");
 //print_r(CheckUser("TestUser" , "123"));
