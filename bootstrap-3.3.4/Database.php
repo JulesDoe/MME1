@@ -99,10 +99,11 @@
                     echo json_encode(GetSeries());
                 break;
                 case "checkuser":
+
                     $user = $_POST["user"];
                     $pw = $_POST["pw"];
                     $erg = CheckUser($user, $pw);
-                    $_SESSION['id'] = $erg["UID"];
+                    //$_SESSION['id'] = $erg["UID"];
                     echo json_encode($erg);
                 break;
                 case "test":

@@ -1,5 +1,8 @@
+
+
 $(function(){
     var data = { action: "getSeries"};
+
     $.post( "Database.php",data, function( resp ) {
                 console.log(resp);
                 var objects =   jQuery.parseJSON(resp);
@@ -12,19 +15,31 @@ $(function(){
                                 html += '<p class="col-md-9">';
                                 html += objects[serienr]["beschreibung"];
                                 html += '</p>';
-                                var staffeln = objects[serienr][""];
-                                var watched = 0;
-                                var fulllength = 0;
-                                for(var i = 0; i <= staffeln.length; i++)
-                                {
-                                    for(var a = 0; a <= staffeln[i].length; a++)
-                                    {
-                                        if(staffeln[i][a] == 1)
-                                            watched++;
-                                        fulllength++;
-                                    }
-                                }
-                                html += '<progressbar';
+                                console.log(objects[serienr]["episodes"]);
+                                var staffeln = objects[serienr]["episodes"];
+                                        console.log(staffeln);
+                                //var watched = 0;
+                                //var fulllength = 0;
+                                jQuery.each(staffeln,function( index, staffel ) {
+                                    html += '<div class="bar-staffel">'
+                                    jQuery.each(staffel,function( index, value ) {
+                                        if(value == 1)
+                                        {
+                                            html += '<div class="bar-folge"></div>';
+                                            //watched++;
+                                        }
+                                        else
+                                        {
+                                            html += '<div class="bar-folge-ungesehn"></div>';
+                                        }
+
+                                        //fulllength++;
+                                    });
+                                     html += '</div>';
+                                });
+
+                                console.log(fulllength + " / " + watched);
+                                html += '<progress id="progBar" value="'+watched+'" max="'+fulllength+'">';
                                 html += '</div>';
                                 $('#content').append(html);
 
