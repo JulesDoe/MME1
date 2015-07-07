@@ -11,6 +11,5 @@ $( document ).ready(function() {
             else
                 event.preventDefault();
         });
-        //console.log( "fertig");
     });
 });
