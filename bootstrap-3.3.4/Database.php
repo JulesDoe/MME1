@@ -42,10 +42,27 @@
     function CheckUser($user, $pw)
     {
         global $mysql;
+        // prevent sql injection by using a prepared statement:
 
-        $ergebnis = mysqli_query($mysql,"SELECT UID FROM `User` WHERE(Email='".$user."' AND pw='".$pw."')" ); //
+        if (!($stmt  = $mysql->prepare("SELECT `UID` FROM `User` WHERE(Email=? AND pw=?)" ))) {
+            echo "Prepare failed: (" . $mysql->errno . ") " . $mysql->error;
+        }
+        if (!$stmt->bind_param('ss', $user, $pw)) {
+            echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+        }
 
-        return mysqli_fetch_assoc($ergebnis);
+        if(!($stmt->execute())){
+            echo "Executing failed: (" . $stmt->errno . ") " . $stmt->error;
+        }
+        if (!($res = $stmt->get_result())) {
+            echo "Getting result set failed: (" . $stmt->errno . ") " . $stmt->error;
+        }
+        //print_r();
+        //print_r($res = $res->fetch());
+        //echo "failed: (" . $stmt->errno . ") " . $stmt->error;
+        //$ergebnis = mysqli_query($mysql,"SELECT UID FROM `User` WHERE(Email='".$user."' AND pw='".$pw."')" ); //
+        mysqli_stmt_close($stmt);
+        return $res->fetch_assoc();
     }
 
     function GetSeries()
@@ -62,8 +79,10 @@
             //print_r($row);
             if(!isset($serien[$sid])) // Neue Serie gefunden
                 $serien[$sid] = new Serie($row["Name"], $row["Beschreibung"], $row["Bild"]);
+
             if(!isset($serien[$sid]->episodes[$row["SNR"]])) //Neue Staffel gefunden
                 $serien[$sid]->episodes[$row["SNR"]] = array();
+
             $serien[$sid]->episodes[$row["SNR"]][$row["ENR"]] = rand(0,1);
         }
         return $serien;
@@ -72,14 +91,18 @@
     function InsertSerie($serie){
         global $mysql;
         //print_r($serie);
-        $ergebnis = mysqli_query($mysql,"Insert into `Serie` (`Name`, `Beschreibung`, `Bild`) values('".$serie->name."', '".$serie->beschreibung."', '".$serie->imgsource."')" ); //
-
-        if (!$ergebnis)
-        {
-            echo "Error: ". mysqli_error($mysql);
+        if (!($stmt  = $mysql->prepare("Insert into `Serie` (`Name`, `Beschreibung`, `Bild`) values(?,?,?)" ))) {
+            echo "Prepare failed: (" . $mysql->errno . ") " . $mysql->error;
         }
-        echo "<br>";
-        return $ergebnis;
+        if (!$stmt->bind_param('sss', $serie->name, $serie->beschreibung, $serie->imgsource)) {
+            echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
+        }
+
+        if(!($stmt->execute())){
+            echo "Executing failed: (" . $stmt->errno . ") " . $stmt->error;
+            return false;
+        }
+        return true;
     }
 
     function Close()
@@ -90,7 +113,6 @@
 
     if(is_ajax())
     {
-
         if (isset($_POST["action"]) && !empty($_POST["action"])) { //Checks if action value exists
             Connect();
             $action = $_POST["action"];
@@ -99,15 +121,17 @@
                     echo json_encode(GetSeries());
                 break;
                 case "checkuser":
-
                     $user = $_POST["user"];
                     $pw = $_POST["pw"];
                     $erg = CheckUser($user, $pw);
                     //$_SESSION['id'] = $erg["UID"];
                     echo json_encode($erg);
                 break;
-                case "test":
-                   echo "test";
+                case "createSerie":
+                    $serie = new Serie($_POST["name"], $_POST["beschreibung"], $_POST["picture"]);
+                    $erfolg["erfolg"] = InsertSerie($serie);
+
+                    echo  json_encode($erfolg);
                 break;
             }
             Close();
